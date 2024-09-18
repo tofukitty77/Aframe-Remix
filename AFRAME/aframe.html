@@ -7,19 +7,22 @@
   <a-scene>
     <!-- Define assets -->
     <a-assets>
-      <img id="star-texture" src="full-moon-png-6.png">
-      <img id="star1-texture" src="The_Blue_Marble_(remastered).jpg.webp">
+      <img id="moon" src="full-moon-png-6.png">
+      <img id="earth" src="The_Blue_Marble_(remastered).jpg.webp">
+      <img id="mars" src="mars-the-astrobiologist-guide-life-the-solar-system-and-14.png">
+      <img id="venus" src="venus.avif">
       <!-- Assuming you have a sky image to use -->
       <img id="sky-texture" src="5ecb4af475227d9c9ec6a51333c54aac.jpg">
     </a-assets>
 
     <!-- Displaying a sphere with the star texture -->
-    <a-sphere src="#star-texture" radius="1" position="1 3 -.5" rotation="0 -50 -35"></a-sphere>
-    <a-sphere src="#star1-texture" radius="1" position="-1 2 2" rotation="0 -50 -25"></a-sphere>
+    <a-sphere src="#moon" radius=".5" position=".50 3 -.5" rotation="0 -45 -35"></a-sphere>
+    <a-sphere src="#earth" radius="1" position="-1 2 2" rotation="0 -50 -25"></a-sphere>
+    <a-sphere src="#mars" radius="1" position="3 2 2" rotation="0 -50 -25"></a-sphere>
+    <a-sphere src="#venus" radius="-1" position="1 2 -2" rotation="0 -40 -.25"></a-sphere>
 
-    <!-- <a-box position="-1 0.6 -.5" rotation="0 45 0" color="#4CC3D9"></a-box>
--->
-    <a-cylinder position="1 0.75 -.5" radius="0.5" height="1.9" color="#FFC65D"></a-cylinder>
+
+    <!-- <a-box position="-1 0.6 -.5" rotation="0 45 0" color="#4CC3D9"></a-box>-->
 
     <!-- Set background image for the sky -->
     <a-sky src="#sky-texture"></a-sky>
