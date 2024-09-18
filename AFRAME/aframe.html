@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Define assets -->
+    <a-assets>
+      <img id="star-texture" src="full-moon-png-6.png">
+      <img id="star1-texture" src="The_Blue_Marble_(remastered).jpg.webp">
+      <!-- Assuming you have a sky image to use -->
+      <img id="sky-texture" src="5ecb4af475227d9c9ec6a51333c54aac.jpg">
+    </a-assets>
+
+    <!-- Displaying a sphere with the star texture -->
+    <a-sphere src="#star-texture" radius="1" position="1 3 -.5" rotation="0 -50 -35"></a-sphere>
+    <a-sphere src="#star1-texture" radius="1" position="-1 2 2" rotation="0 -50 -25"></a-sphere>
+
+    <!-- Displaying other objects -->
+    <a-box position="-1 0.6 -.5" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-cylinder position="1 0.75 -.5" radius="0.5" height="1.9" color="#FFC65D"></a-cylinder>
+
+    <!-- Set background image for the sky -->
+    <a-sky src="#sky-texture"></a-sky>
+    <!-- <a-plane position="0 0 -0.5" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+
+    <!-- Lighting -->
+    <a-light type="ambient" color="#ffffff"></a-light>
+    <a-light type="directional" color="#ffffff" position="-1 2 1"></a-light>
+
+    <!-- Camera setup -->
+    <a-camera position="0 1.6 5"></a-camera>
+  </a-scene>
+</body>
+</html>
